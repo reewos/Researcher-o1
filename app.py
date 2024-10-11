@@ -24,7 +24,6 @@ if "max_tokens" not in st.session_state:
 if "chat_messages" not in st.session_state:
     st.session_state.chat_messages = [{"role":'system', "content":'You are a helpfull assistant'}]
 
-
 # Model configuration
 gpt_4o_mini = OpenAI(model="gpt-4o-mini", api_key=os.environ['AIML_API_KEY'], api_base="https://api.aimlapi.com")
 gpt_o1_mini = OpenAI(model="o1-mini", api_key=os.environ['AIML_API_KEY'], api_base="https://api.aimlapi.com", max_tokens=st.session_state.max_tokens)
