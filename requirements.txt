@@ -3,4 +3,4 @@ openai
 llama-index
 arxiv
 PyPDF2
-dotenv
+python-dotenv
